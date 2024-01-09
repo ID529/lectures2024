@@ -557,6 +557,20 @@ str(data)
 
 # Case Studies {.white-title background-image="images/bg-collatz-2.png"}
 
+## Sample R code and datasets {.smaller}
+
+<br>
+
+You can download the R script and datasets used for the two following examples via the following link:
+
+<br>
+
+<https://github.com/dmarengi/reading_in_data>
+
+<br>
+
+Either clone the repository or download it directly from github
+
 ## Case study 1 {.smaller}
 
 Your non-technical colleague has reached out to you for assistance with preparing an old dataset for an upcoming project. Your colleague typically receives curated datasets and has not previously worked with data stored in a fixed width file format.
