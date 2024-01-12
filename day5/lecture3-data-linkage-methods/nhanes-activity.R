@@ -12,10 +12,10 @@
 # Uncomment and run lines 15-18  (if you have not already 
 # loaded the ID529 NHANES data or installed the tidyverse)
 
-install.packages("tidyverse")
-install.packages("devtools")
-library(devtools)
-devtools::install_github("ID529/ID529data")
+# install.packages("tidyverse")
+# install.packages("devtools")
+# library(devtools)
+# devtools::install_github("ID529/ID529data")
 
 # Load relevant package libraries
 library(ID529data) # Includes ID 529 NHANES data
