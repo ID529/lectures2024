@@ -57,12 +57,12 @@ glimpse(pfas)
 # PRACTICE ---------------------------------------------------------------------
 # 1. Review the code used to create the above datasets and add a comment
 # above each line describing what the function is doing
-left_join(clinical, pfas, by = "id")
+
 
 # 2. Left join the clinical data to the pfas data. What happend? 
 # How many rows and columns were in the original datasets? 
 # How many are in the final, joined dataset? 
-### Add your code here
+left_join(clinical, pfas, by = "id")
 
 # 3. Right join the clinical data to the pfas data. What happend now? 
 # Again, how many rows and columns were in the original datasets? 
