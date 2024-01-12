@@ -784,7 +784,7 @@ Gif Source: <https://github.com/gadenbuie/tidyexplain>
 
 <br> <br> <br>
 
--   **Download R Script file here:** <https://github.com/ID529/lectures2024/tree/main/day5/lecture3-data-linkage-methods/nhanes-activity.R>
+-   **Download R Script file here:** <https://github.com/ID529/lectures2024/blob/master/day5/lecture3-data-linkage-methods/nhanes-activity.R>
     -   `nhanes-activity.R`
 
 <br>
