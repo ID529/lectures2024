@@ -77,3 +77,19 @@ left_join(clinical, pfas, by = "id")
 # How might this be useful? 
 anti_join(pfas, clinical, by = "id")
 
+# Load the nhanes data
+ID529data::nhanes_id529 %>% 
+  # Convert our dataframe to a tibble
+  as_tibble() %>% 
+  # Select the id and pfas columns
+  select(id, PFOS:PFDE) %>% 
+  # Make all of the column names lower case
+  rename_with(~ str_to_lower(.)) %>%
+  # Now we filter for observations that have at least one pfas biomarker measure.
+  # rowSums(is.na(.) is summing the number of missing values, across columns, for each row.
+  # So, for a given observation, if all pfas values are missing (i.e., rowSums(is.na(.)) == 5), 
+  # Then we remove hat observation from our dataset. The result of this filtering will 
+  # preserve all observations with *at least* 1 pfas biomarker measure in the dataset.
+  filter(rowSums(is.na(.)) < 5) %>%
+  mutate(missing_pfas = rowSums(is.na(.))) %>% 
+  arrange(desc(missing_pfas))

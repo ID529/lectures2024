@@ -296,7 +296,7 @@ left_join(
 :::
 ::::
 
-![](images/left-join.gif){.absolute right="7%" bottom="0%" height="45%"}
+![](images/left-join.gif){.absolute right="7%" bottom="0%" height="40%"}
 
 ::: aside
 Gif Source: <https://github.com/gadenbuie/tidyexplain>
@@ -603,7 +603,7 @@ Gif Source: <https://github.com/gadenbuie/tidyexplain>
 
 ```{r, echo=T, eval=F}
 anti_join(x, 
-          y, 
+          y 
           by = NULL
 )
 ```
